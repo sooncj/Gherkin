@@ -677,7 +677,7 @@ class Parser
      * @param StepNode[] $steps
      * @return StepNode
      */
-    private function normalizeStepNodeKeywordType(StepNode $node, array $steps = array())
+    protected function normalizeStepNodeKeywordType(StepNode $node, array $steps = array())
     {
         if (in_array($node->getKeywordType(), array('And', 'But'))) {
             if (($prev = end($steps))) {
