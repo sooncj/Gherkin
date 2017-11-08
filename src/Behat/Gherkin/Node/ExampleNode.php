@@ -179,6 +179,16 @@ class ExampleNode implements ScenarioInterface
     }
 
     /**
+     * Returns outline steps.
+     *
+     * @return StepNode[]
+     */
+    protected function getOutlineSteps()
+    {
+        return $this->outlineSteps;
+    }
+
+    /**
      * Creates steps for this example from abstract outline steps.
      *
      * @return StepNode[]

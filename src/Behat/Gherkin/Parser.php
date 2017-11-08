@@ -653,7 +653,7 @@ class Parser
      *
      * @return string[][]
      */
-    private function parseTableRows()
+    protected function parseTableRows()
     {
         $table = array();
         while (in_array($predicted = $this->predictTokenType(), array('TableRow', 'Newline', 'Comment'))) {
